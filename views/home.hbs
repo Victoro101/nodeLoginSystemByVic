@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <div class="navItems">
+
+        <div class="logo">
+           <a href="/"> Logo Here  </a> 
+        </div>
+        <ul>
+     {{!-- <li>
+        <a href="/register">
+        <button>
+            Register
+        </button></a>
+     </li>
+      <li>
+        <a href="/login">
+        <button>
+            Login
+        </button></a>
+     </li> --}}
+
+
+       
+        </ul>
+        <a href="/logout"><button id="logOut">Log Out</button></a>
+        </div>
+    </nav>
+    <section>
+
+{{#if message_1}}
+<h1 class="access"> Welcome<span>{{message_1}} </span> </h1>
+{{/if}}
+<p>Standard Node Login System with CSS Neumorphism</p>
+    </section>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        .logo a{
+            color: white;
+            font-size: 1.5rem;
+text-decoration: none;
+        }
+       
+        body{
+            background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
+        }
+        nav{
+            background: rgb(68, 68, 255);
+            
+        }
+        .navItems{
+
+
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            width: 98%;
+            align-items: center;
+            height: 5rem;
+
+        }
+       li a button{
+            height: 2.8rem;
+            width: 8rem;
+            background: rgb(255, 55, 88);
+            border: none;
+            border-radius: 5px;
+            padding: .5rem;
+           color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        #logOut{
+              height: 2.8rem;
+            width: 8rem;
+            background: rgb(255, 27, 27);
+            border: none;
+            border-radius: 5px;
+            padding: .5rem;
+           color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #logOut:hover{
+            background: grey;
+        }
+        .navItems ul{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .logo{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section p{
+            font-size: 30px;
+            font-weight: 800;
+            padding-top: 20px;
+            color: rgb(58, 58, 58);
+        }
+        .access{
+            padding-top: 60px;
+            font-size: 100px;
+            font-weight: 800;
+color: rgb(68, 68, 255);
+        }
+        .access span{
+            color: rgb(255, 55, 88);
+        }
+    </style>
+</body>
+</html>

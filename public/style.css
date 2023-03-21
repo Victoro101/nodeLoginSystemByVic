@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ body{
+     /* background-color: rgba(231, 231, 231, 0.955);  */
+     /* background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 11px,rgba(255,255,255,0.04) 11px, rgba(255,255,255,0.04) 19px,transparent 19px, transparent 29px,rgba(255,255,255,0.04) 29px, rgba(255,255,255,0.04) 33px),repeating-radial-gradient(circle at center center, rgb(0,0,0) 0px, rgb(0,0,0) 5px,rgb(0,0,0) 5px, rgb(0,0,0) 17px,rgb(0,0,0) 17px, rgb(0,0,0) 30px,rgb(0,0,0) 30px, rgb(0,0,0) 43px,rgb(0,0,0) 43px, rgb(0,0,0) 45px,rgb(0,0,0) 45px, rgb(0,0,0) 47px); background-size: 53px 53px; */
+
+
+
+     /* background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228)); 
+     background-blend-mode:overlay,overlay,overlay,normal; */
+     background-image: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+
+
+
+
+} 
+.logo a{
+    color: white;
+    font-size: 1.5rem;
+    
+}
+nav{
+    background: rgb(68, 68, 255);
+    
+}
+.navItems{
+
+
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 98%;
+    align-items: center;
+    height: 5rem;
+
+}
+li a button{
+    height: 2.8rem;
+    width: 8rem;
+    background: rgb(255, 55, 88);
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+   color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.navItems ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.logo{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* .first{
+    /* margin-top: 20px; */
+    /* background: red; 
+} */
+
+
+
+a{
+    color: rgb(96, 96, 255);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.loginText{
+    text-align: center;
+    color: rgb(96, 96, 255);
+}
+.contact2 {
+    /* background: black; */
+    width: 100%;
+   padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    /* filter: blur(5px); */
+    /* align-items: center; */
+}
+.contact2 form{
+    width: 90%;
+    
+}
+.contact2 form div>div {
+   /* background: rebeccapurple; */
+   /* width: 80rem; */
+  display: flex;
+  /* margin-top: 3rem;   */
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.contact2 form div>p {
+    /* margin: auto; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background: red; */
+    /* margin: .9rem; */
+
+
+
+
+}
+
+.contact2 form div span{
+    background: rgba(255, 24, 24, 0.76);
+    width: 32%;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 2rem; */
+    margin: 1rem auto;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.contact2 form .data1 {
+    padding: 10px 10px;
+    pointer-events: none;
+    position: absolute;
+    /* gap: 1rem; */
+    left: 42%;
+    /* top: 20%; */
+    margin-top: .99rem;
+    font-weight: bold;
+    transition: .2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity: 0.7;
+    background: rgba(246, 246, 246) ;
+    /* background: none; */
+    border: none;
+
+}
+
+/* .contact2 form div div .data2 {
+    padding: 10px 10px;
+    pointer-events: none;
+    position: absolute;
+    left: 56%;
+    margin-top: .3rem;
+    transition: .2s;
+    font-weight: bold;
+    /* transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); 
+    opacity: 0.7;
+    background: #fff;
+    /* background: none; 
+    border: none;
+
+} */
+
+/* .contact2>label>p:nth-child(even) {
+    margin-left: 5rem;
+} */
+
+.contact2 form div div label i {
+    padding-right: .5rem;
+}
+
+.contact2 form>div>div>p>input {
+    padding: 30px 50px;
+    border:none;
+    border-radius: 20px;
+    background: rgba(246, 246, 246, 0.955);
+    box-shadow: 10px 10px 10px -1px rgb(198, 198, 198),-10px -10px 10px -1px rgb(241, 241, 241);
+/* font-size: 25px; */
+}
+
+.contact2 form input:focus+label,
+input:not(:placeholder-shown)+label {
+    opacity: 1;
+    transform: scale(0.75) translateY(-110%) translateX(-5px);
+
+}
+
+.contact2 form input:valid+label,
+input:not(:placeholder-shown)+label {
+    opacity: 1;
+    transform: scale(0.75) translateY(-110%) translateX(-5px);
+
+}
+button[type="submit"]{
+    background:  rgb(71, 71, 255);
+   padding: 20px 105px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    box-shadow: 10px 10px 10px -1px rgb(109, 109, 109),-10px -10px 10px -1px rgb(255, 255, 255);
+
+}
+button[type="submit"]:hover{
+    background:  rgb(32, 32, 255);
+    
+}
+/* form div>div>p:last-child{
+    display: flex;
+    background: red;
+    margin: auto;
+} */
+
+form>p:last-child{
+    display: flex;
+    margin: auto;
+    margin: 1rem 0 0 30.5rem;
+}
+
+#loginMessage{
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 5px;
+    animation-name:errorMessageAnimation;
+    animation-duration: .5s;
+}
+
+
+@keyframes errorMessageAnimation
+ {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+}
